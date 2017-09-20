@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled, { keyframes } from 'styled-components';
 import PropTypes from 'prop-types';
 import { theme } from '../theme/';
-import { Button } from './Button';
+import Button from './Button';
 
 export const Summary = styled.div`
   font-size: 1.2em;

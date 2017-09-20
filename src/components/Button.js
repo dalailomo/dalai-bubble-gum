@@ -1,5 +1,6 @@
 import React from 'react';
-import  styled, { keyframes } from 'styled-components';
+import PropTypes from 'prop-types';
+import styled, { keyframes } from 'styled-components';
 import { theme } from '../theme/';
 
 const push = keyframes`
@@ -8,7 +9,7 @@ const push = keyframes`
     100%    { transform: scale3d(1, 1, 1); }
 `;
 
-export const Button = styled.button`
+const Button = styled.button`
     border: 0;
     padding: 4pt 8pt;
     border-radius: 4pt;
@@ -29,3 +30,12 @@ export const Button = styled.button`
       outline: none;
     }
 `;
+
+Button.propTypes = {
+  info: PropTypes.bool,
+  success: PropTypes.bool,
+  warning: PropTypes.bool,
+  danger: PropTypes.bool,
+}
+
+export default Button;
