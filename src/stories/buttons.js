@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react';
 import { Button } from '../components/Button';
 
 storiesOf('Button', module)
-    .add('Default', () => (
+    .add('Default buttons', () => (
         <div>
             <Button>Chew it!</Button>
             &nbsp;

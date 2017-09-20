@@ -22,8 +22,10 @@ export const Button = styled.button`
     ${props => props.danger && `background-color: ${theme.color.danger}; color: white;`};
     ${props => props.success && `background-color: ${theme.color.success}; color: white;`};
 
+    &:active {
+      animation: ${push} .2s ease-in-out;
+    }
     &:focus {
-        animation: ${push} .2s ease-in-out;
-        outline: none;
+      outline: none;
     }
 `;
